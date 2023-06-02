@@ -14,6 +14,11 @@ public class ThingSteps {
     return this.thingStash.get();
   }
 
+  @Given("I have a Thing")
+  public void givenIHaveAThing() {
+    thingStash.set(new Thing());
+  }
+
   @Given("I have a Thing with an item named foo")
   public void givenIHaveAThingWithAnItemNamed(String name) {
     Thing thing = new Thing(name);

@@ -1,0 +1,25 @@
+
+(test/practice/stories/addItemsToThings.story)
+BeforeSystemStorySteps
+
+BeforeUserStorySteps
+
+Scenario: I have a Thing and I can add items to it
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given I have a Thing with an item named foo (PENDING)
+When I add an item named bar (NOT PERFORMED)
+Then My Thing has 2 items (NOT PERFORMED)
+And My Thing has an item named bar (NOT PERFORMED)
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+AfterUserStorySteps
+
+AfterSystemStorySteps
+
+
