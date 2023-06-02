@@ -19,23 +19,23 @@ public class ThingSteps {
     thingStash.set(new Thing());
   }
 
-  @Given("I have a Thing with an item named foo")
+  @Given("I have a Thing with an item named $name")
   public void givenIHaveAThingWithAnItemNamed(String name) {
     Thing thing = new Thing(name);
     thingStash.set(thing);
   }
 
-  @When("I add an item named bar")
+  @When("I add an item named $name")
   public void whenIAddAnItemNamed(String name) {
     getThing().addThing(name);
   }
 
-  @Then("My Thing has 2 items")
+  @Then("My Thing has $count items")
   public void thenThingHasName(int count) {
     Assert.assertEquals(getThing().getThingCount(), count);
   }
 
-  @Then("My Thing has an item named bar")
+  @Then("My Thing has an item named $name")
   public void thenThingHasName(String name) {
     Assert.assertTrue(getThing().hasThing(name));
   }   
