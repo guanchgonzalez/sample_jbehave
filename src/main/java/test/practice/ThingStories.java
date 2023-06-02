@@ -42,9 +42,9 @@ import static org.jbehave.core.reporters.Format.XML;
  * </p> 
  */
 @RunWith(JUnit4StoryRunner.class)
-public class MyStories extends JUnitStories {
+public class ThingStories extends JUnitStories {
     
-    public MyStories() {
+    public ThingStories() {
         configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
                 .doIgnoreFailureInView(true).useThreads(2);
     }
