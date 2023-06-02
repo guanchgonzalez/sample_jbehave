@@ -79,16 +79,16 @@
         <artifactId>jbehave-maven-plugin</artifactId>
         <version>${jbehave.core.version}</version>
         <executions>
-          <execution>
+          <!--<execution>
             <id>unpack-view-resources</id>
             <phase>process-resources</phase>
             <goals>
               <goal>unpack-view-resources</goal>
             </goals>
-          </execution>
+          </execution>-->
           <execution>
             <id>embeddable-stories</id>
-            <phase>integration-test</phase>
+            <phase>test</phase>
             <configuration>
               <includes>
                 <include>${embeddables}</include>
