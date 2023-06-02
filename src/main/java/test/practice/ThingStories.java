@@ -45,8 +45,11 @@ import static org.jbehave.core.reporters.Format.XML;
 public class ThingStories extends JUnitStories {
     
     public ThingStories() {
-        configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(2);
+        configuredEmbedder().embedderControls()
+            .doGenerateViewAfterStories(true)
+            .doIgnoreFailureInStories(true)
+            .doIgnoreFailureInView(true)
+            .useThreads(2);
     }
 
     @Override
@@ -61,7 +64,7 @@ public class ThingStories extends JUnitStories {
         ExamplesTableFactory examplesTableFactory = new ExamplesTableFactory(resourceLoader, tableTransformers);
         // add custom converters
         parameterConverters.addConverters(new DateConverter(new SimpleDateFormat("yyyy-MM-dd")),
-                new ExamplesTableConverter(examplesTableFactory));
+            new ExamplesTableConverter(examplesTableFactory));
         return new MostUsefulConfiguration()
             .useStoryLoader(new LoadFromClasspath(embeddableClass))
             .useStoryParser(new RegexStoryParser(examplesTableFactory)) 
@@ -81,6 +84,7 @@ public class ThingStories extends JUnitStories {
 
     @Override
     public List<String> storyPaths() {
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
+        return new StoryFinder()
+            .findPaths(codeLocationFromClass(this.getClass()),"**/*.story", "**/excluded*.story");
     }
 }

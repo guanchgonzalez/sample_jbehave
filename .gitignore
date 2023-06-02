@@ -2,3 +2,10 @@
 # Logs
 logs
 logs/*
+
+# Misc
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+*/*/*/*/.DS_Store
