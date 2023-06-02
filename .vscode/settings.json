@@ -1,7 +1,4 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "java.compile.nullAnalysis.mode": "automatic",
-    "go.executable.path": "/usr/local/bin/go",
-    "maven.executable.path": "/usr/local/bin/mvn",
-    "npm.executable.path": "/usr/local/bin/npm"
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive"
 }

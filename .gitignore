@@ -4,8 +4,8 @@ logs
 logs/*
 
 # Visual Studio Code
-.vscode
-.vscode/*
+#.vscode
+#.vscode/*
 
 # Misc
 .DS_Store
