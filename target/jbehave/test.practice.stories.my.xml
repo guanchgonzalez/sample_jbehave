@@ -1,0 +1,52 @@
+<story id="7645b946-3019-4e5c-8a3c-b5ad1c1b59d4" path="test/practice/stories/my.story" title="">
+<beforeSystemStorySteps>
+</beforeSystemStorySteps>
+<beforeUserStorySteps>
+</beforeUserStorySteps>
+<scenario id="2c14ed67-7deb-4b0b-9803-bb2ee3ec5cfa" keyword="Scenario:" title="A scenario with some pending steps">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="pending" keyword="PENDING">Given I am a pending step</step>
+<step outcome="pending" keyword="PENDING">And I am still pending step</step>
+<step outcome="pending" keyword="PENDING">When a good soul will implement me</step>
+<step outcome="pending" keyword="PENDING">Then I shall be happy</step>
+<pendingMethod>@Given(&quot;I am a pending step&quot;)
+@Pending
+public void givenIAmAPendingStep() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Given(&quot;I am still pending step&quot;)
+@Pending
+public void givenIAmStillPendingStep() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;a good soul will implement me&quot;)
+@Pending
+public void whenAGoodSoulWillImplementMe() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;I shall be happy&quot;)
+@Pending
+public void thenIShallBeHappy() {
+  // PENDING
+}
+</pendingMethod>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1685696197879</timing>
+<timing phase="end">1685696197888</timing>
+</scenario>
+<afterUserStorySteps>
+</afterUserStorySteps>
+<afterSystemStorySteps>
+</afterSystemStorySteps>
+</story>

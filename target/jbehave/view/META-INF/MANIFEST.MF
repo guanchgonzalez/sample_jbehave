@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: mauro
+Build-Jdk: 11.0.9.1
+Specification-Title: XSite Resources
+Implementation-Title: XSite Resources
+Implementation-Version: 1.4
+Implementation-Vendor-Id: org.codehaus.xsite
+Implementation-URL: http://x-stream.github.io/xsite/xsite-resources
+Specification-Version: 1.4
+X-Build-Os: Mac OS X
+X-Build-Time: 2021-01-26T19:34:15Z
+X-Builder: Maven 3.6.3
+X-Compile-Source: 1.8
+X-Compile-Target: 1.8
+
